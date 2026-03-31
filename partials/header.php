@@ -6,6 +6,6 @@
           content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./css/output.css" rel="stylesheet">
-
+    <script type="text/javascript" src="js/main.js" defer></script>
     <title>HandyCatcher</title>
 </head>
