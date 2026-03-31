@@ -2,19 +2,51 @@
 include_once "partials/header.php";
 ?>
 
-<body>
-<nav class="bg-[#05668D] h-7 flex px-5 rounded-b-xl">
-    <div class="flex-3">
-        <img src="" alt="logo"/>
-    </div>
-    <!---->
-    <!--    <div class="flex-1">-->
-    <!--        <a href="">link 1</a>-->
-    <!--        <a href="">link 2</a>-->
-    <!--        <a href="">link 3</a>-->
-    <!--    </div>-->
-</nav>
-</body>
+<body class="text-white">
+<div class="flex flex-col gap-[48px]">
+
+    <nav class="bg-[#05668D] items-center h-10 flex px-5 rounded-b-[80px]">
+        <div class="flex-3">
+            <img src="" alt="logo"/>
+        </div>
+
+        <div class="flex-2 flex px-5 gap-4">
+            <a class="text-xs" href="">Doelgroep en context</a>
+            <a class="text-xs" href="">Type sensor</a>
+            <a class="text-xs" href="">hoe werkt het</a>
+        </div>
+    </nav>
+
+    <header class="bg-[#05668D] mx-5 rounded-xl p-5">
+        <p class="">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am
+        </p>
+    </header>
+</div>
+
+<main class="my-12 text-black">
+    <section class="flex flex-row gap-2">
+        <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
+            <div class=""> Doelgroep en context</div>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata
+        </div>
+
+        <div class="flex-1 justify-center items-center">
+            <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
+                <div class=""> Doelgroep en context</div>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata
+            </div>
+        </div>
+    </section>
+</main>
 <?php
-include_once "partials/footer.php";
-?>
+//include_once "partials/footer.php";
+//?>
+</body>
+
