@@ -11,9 +11,9 @@ include_once "partials/header.php";
         </div>
 
         <div class="flex-2 flex px-5 gap-4">
-            <a class="text-xs" href="">Doelgroep en context</a>
-            <a class="text-xs" href="">Type sensor</a>
-            <a class="text-xs" href="">hoe werkt het</a>
+            <a class="text-xs btn" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
+            <a class="text-xs btn" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
+            <a class="text-xs btn" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
         </div>
     </nav>
     <div class="mx-12">
@@ -27,7 +27,7 @@ include_once "partials/header.php";
 
 
 <main class="my-12 text-black">
-    <section class="flex flex-row gap-2">
+    <section id="doelgroep-en-context" class="flex flex-row gap-2">
         <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 rounded-[40px] p-5">
             <div class=""> Doelgroep en context</div>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -45,7 +45,7 @@ include_once "partials/header.php";
     <div class="bg-[#4A7B14] w-[98%] ml-[2%]  rounded-[40px] min-h-2">
     </div>
 
-    <section class="flex flex-row gap-2">
+    <section id="type-sensor" class="flex flex-row gap-2">
         <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 rounded-[40px] p-3">
             <div class="">Type sensor</div>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -68,5 +68,6 @@ include_once "partials/header.php";
 <?php
 //include_once "partials/footer.php";
 //?>
+    <script src="js/main.js"></script>
 </body>
 
