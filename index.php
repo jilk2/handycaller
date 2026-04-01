@@ -46,8 +46,8 @@ include_once "partials/header.php";
     </div>
 
     <section class="flex flex-row gap-2">
-        <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 rounded-[40px] p-5">
-            <div class=""> Doelgroep en context</div>
+        <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 rounded-[40px] p-3">
+            <div class="">Type sensor</div>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
             clita kasd gubergren, no sea takimata

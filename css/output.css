@@ -276,6 +276,9 @@
   .bg-\[\#05668D\] {
     background-color: #05668D;
   }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
