@@ -175,9 +175,6 @@
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
-  .m-\[50vw\] {
-    margin: 50vw;
-  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -190,68 +187,29 @@
   .mx-12 {
     margin-inline: calc(var(--spacing) * 12);
   }
-  .mx-\[5vw\] {
-    margin-inline: 5vw;
-  }
-  .mx-\[12\.5vw\] {
-    margin-inline: 12.5vw;
-  }
-  .mx-\[25vw\] {
-    margin-inline: 25vw;
-  }
-  .mx-\[50vw\] {
-    margin-inline: 50vw;
-  }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
   .ml-\[2\%\] {
     margin-left: 2%;
   }
-  .ml-\[3\%\] {
-    margin-left: 3%;
-  }
-  .ml-\[5\%\] {
-    margin-left: 5%;
-  }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .max-h-\[10vh\] {
-    max-height: 10vh;
-  }
   .max-h-\[50vh\] {
     max-height: 50vh;
-  }
-  .max-h-\[90vh\] {
-    max-height: 90vh;
-  }
-  .max-h-\[100\%\] {
-    max-height: 100%;
   }
   .min-h-2 {
     min-height: calc(var(--spacing) * 2);
   }
-  .w-\[50\%\] {
-    width: 50%;
-  }
-  .w-\[75\%\] {
-    width: 75%;
-  }
-  .w-\[90\%\] {
-    width: 90%;
-  }
-  .w-\[95\%\] {
-    width: 95%;
-  }
   .w-\[98\%\] {
     width: 98%;
-  }
-  .w-\[100\%\] {
-    width: 100%;
   }
   .flex-1 {
     flex: 1;
@@ -261,6 +219,12 @@
   }
   .flex-3 {
     flex: 3;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -308,9 +272,6 @@
     border-style: var(--tw-border-style);
     border-width: 4px;
   }
-  .border-\[\#4A7B14\] {
-    border-color: #4A7B14;
-  }
   .border-\[\#05668D\] {
     border-color: #05668D;
   }
@@ -348,6 +309,13 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
 }
 .btn {
   border-radius: calc(infinity * 1px);
@@ -363,6 +331,16 @@
   --tw-duration: 300ms;
   transition-duration: 300ms;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -370,6 +348,8 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
