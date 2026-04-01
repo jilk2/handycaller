@@ -176,8 +176,20 @@
   .m-\[50vw\] {
     margin: 50vw;
   }
+  .mx-2 {
+    margin-inline: calc(var(--spacing) * 2);
+  }
   .mx-5 {
     margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-8 {
+    margin-inline: calc(var(--spacing) * 8);
+  }
+  .mx-12 {
+    margin-inline: calc(var(--spacing) * 12);
+  }
+  .mx-\[5vw\] {
+    margin-inline: 5vw;
   }
   .mx-\[12\.5vw\] {
     margin-inline: 12.5vw;
@@ -191,11 +203,32 @@
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
+  .ml-\[2\%\] {
+    margin-left: 2%;
+  }
+  .ml-\[3\%\] {
+    margin-left: 3%;
+  }
+  .ml-\[5\%\] {
+    margin-left: 5%;
+  }
   .flex {
     display: flex;
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
+  }
+  .max-h-\[10vh\] {
+    max-height: 10vh;
+  }
+  .max-h-\[50vh\] {
+    max-height: 50vh;
+  }
+  .max-h-\[90vh\] {
+    max-height: 90vh;
+  }
+  .max-h-\[100\%\] {
+    max-height: 100%;
   }
   .min-h-2 {
     min-height: calc(var(--spacing) * 2);
@@ -205,6 +238,18 @@
   }
   .w-\[75\%\] {
     width: 75%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[95\%\] {
+    width: 95%;
+  }
+  .w-\[98\%\] {
+    width: 98%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .flex-1 {
     flex: 1;
@@ -287,6 +332,9 @@
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
   }
   .text-xs {
     font-size: var(--text-xs);
