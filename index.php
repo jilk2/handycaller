@@ -28,7 +28,7 @@ include_once "partials/header.php";
 
 <main class="my-12 text-black">
     <section class="flex flex-row gap-2">
-        <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
+        <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 rounded-[40px] p-5">
             <div class=""> Doelgroep en context</div>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
             dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -37,11 +37,30 @@ include_once "partials/header.php";
 
         <div class="flex-1 justify-center items-center">
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
-                <div class=""> Doelgroep en context</div>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren, no sea takimata
+                <img src="image/work-in-progress.jpg" alt="a work in progress image">
             </div>
+        </div>
+    </section>
+
+    <div class="bg-[#4A7B14] w-[75%] mx-[12.5vw] rounded-[40px] min-h-2">
+    </div>
+
+    <section class="flex flex-row gap-2">
+        <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 rounded-[40px] p-5">
+            <div class=""> Doelgroep en context</div>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata
+        </div>
+
+        <div class="flex-1 justify-center items-center flex-col">
+            <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
+                <img src="image/work-in-progress.jpg" alt="a work in progress image">
+            </div>
+            <div class="border-4 border-[#05668D] mx-5 rounded-xl p-5">
+            hello
+            </div>
+
         </div>
     </section>
 </main>
