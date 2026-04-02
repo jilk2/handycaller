@@ -1,4 +1,11 @@
 @import "tailwindcss";
+.btn {
+    @apply bg-[#4A7B14] text-[#EBF2FA] rounded-full;
+}
+
+.btn:hover {
+    @apply bg-[#BDE692] transition duration-300;
+}
 
 @media only screen and (max-width: 600px) {
 

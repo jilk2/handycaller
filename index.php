@@ -11,9 +11,9 @@ include_once "partials/header.php";
         </div>
 
         <div class="flex-2 flex px-5 gap-4">
-            <a class="text-xs" href="">Doelgroep en context</a>
-            <a class="text-xs" href="">Type sensor</a>
-            <a class="text-xs" href="">hoe werkt het</a>
+            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
+            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
+            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
         </div>
     </nav>
     <div class="mx-12 smallSideMargin">
@@ -48,9 +48,10 @@ include_once "partials/header.php";
     <section class="flex flex-row rowToColumn gap-2">
         <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 noSideMargin rounded-[40px] p-3">
             <div class="">Type sensor</div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata
+            <p>Foto van het product verandert per knop...</p>
+            <button class="btn p-3" onclick="changeImage('images/shake.webp')">Schudden</button>
+            <button class="btn p-3" onclick="changeImage('images/hover.jpg')">Hover</button>
+            <button class="btn p-3" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
         </div>
 
         <div class="flex-2 justify-center items-center flex-col columnReverse">
@@ -68,5 +69,6 @@ include_once "partials/header.php";
 <?php
 //include_once "partials/footer.php";
 //?>
+    <script src="js/main.js"></script>
 </body>
 
