@@ -1,6 +1,6 @@
 @import "tailwindcss";
 .btn {
-    @apply bg-[#4A7B14] text-[#EBF2FA] rounded-full p-1;
+    @apply bg-[#4A7B14] text-[#EBF2FA] rounded-full;
 }
 
 .btn:hover {

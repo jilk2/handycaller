@@ -11,9 +11,9 @@ include_once "partials/header.php";
         </div>
 
         <div class="flex-2 flex px-5 gap-4">
-            <a class="text-xs btn" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
-            <a class="text-xs btn" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
-            <a class="text-xs btn" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
+            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
+            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
+            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
         </div>
     </nav>
     <div class="mx-12">
@@ -37,7 +37,7 @@ include_once "partials/header.php";
 
         <div class="flex-1 justify-center items-center">
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
-                <img src="image/work-in-progress.jpg" alt="a work in progress image">
+                <img src="images/work-in-progress.jpg" alt="a work in progress image">
             </div>
         </div>
     </section>
@@ -46,18 +46,19 @@ include_once "partials/header.php";
     </div>
 
     <section id="type-sensor" class="flex flex-row gap-2">
-        <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 rounded-[40px] p-3">
+        <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 rounded-[40px] p-3 gap-2">
             <div class="">Type sensor</div>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata
+            <p>Foto van het product verandert per knop...</p>
+            <button class="btn p-3" onclick="changeImage('images/shake.webp')">Schudden</button>
+            <button class="btn p-3" onclick="changeImage('images/hover.jpg')">Hover</button>
+            <button class="btn p-3" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
         </div>
 
         <div class="flex-2 justify-center items-center flex-col">
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5">
-                <img class="max-h-[50vh]" src="image/work-in-progress.jpg" alt="a work in progress image">
+                <img id="productImage" class="max-h-[50vh] transition-opacity duration-300 opacity-100" src="images/work-in-progress.jpg" alt="Afbeelding van 'a work in progress'">
             </div>
-            <div class="border-4 border-[#05668D] mx-5 rounded-xl p-5">
+            <div id="hoe-werkt-het" class="border-4 border-[#05668D] mx-5 rounded-xl p-5">
             hello
             </div>
 
