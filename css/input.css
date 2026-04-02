@@ -6,3 +6,25 @@
 .btn:hover {
     @apply bg-[#BDE692] transition duration-300;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .smallSideMargin {
+        margin-left:  1rem;
+        margin-right: 1rem;
+    }
+    .smallTopMargin {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .noSideMargin {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .rowToColumn {
+        flex-direction: column;
+    }
+    .columnReverse {
+        flex-direction: column-reverse;
+    }
+}

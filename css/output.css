@@ -325,6 +325,26 @@
   --tw-duration: 300ms;
   transition-duration: 300ms;
 }
+@media only screen and (max-width: 600px) {
+  .smallSideMargin {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .smallTopMargin {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .noSideMargin {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .rowToColumn {
+    flex-direction: column;
+  }
+  .columnReverse {
+    flex-direction: column-reverse;
+  }
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;
