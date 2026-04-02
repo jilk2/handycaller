@@ -168,6 +168,9 @@
   }
 }
 @layer utilities {
+  .m-2 {
+    margin: calc(var(--spacing) * 2);
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -283,6 +286,18 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-100 {
+    opacity: 100%;
+  }
+  .transition-opacity {
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
 }
 .btn {
   border-radius: calc(infinity * 1px);
@@ -298,6 +313,9 @@
   transition-duration: 300ms;
 }
 @media only screen and (max-width: 600px) {
+  button {
+    padding: 2px;
+  }
   .smallSideMargin {
     margin-left: 1rem;
     margin-right: 1rem;

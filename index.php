@@ -27,7 +27,7 @@ include_once "partials/header.php";
 
 
 <main class="my-12 text-black">
-    <section class="flex flex-row rowToColumn gap-2">
+    <section id="doelgroep-en-context" class="flex flex-row rowToColumn gap-2">
         <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 noSideMargin rounded-[40px] p-5">
             <div class=""> Doelgroep en context</div>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -37,7 +37,7 @@ include_once "partials/header.php";
 
         <div class="flex-1 justify-center items-center">
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5 noSideMargin">
-                <img src="image/work-in-progress.jpg" alt="a work in progress image">
+                <img src="images/work-in-progress.jpg" alt="a work in progress image">
             </div>
         </div>
     </section>
@@ -45,20 +45,20 @@ include_once "partials/header.php";
     <div class="bg-[#4A7B14] w-[98%] ml-[2%]  rounded-[40px] min-h-2">
     </div>
 
-    <section class="flex flex-row rowToColumn gap-2">
-        <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 noSideMargin rounded-[40px] p-3">
+    <section id="type-sensor" class="flex flex-row rowToColumn gap-2">
+        <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 noSideMargin rounded-[40px] p-3 gap-2">
             <div class="">Type sensor</div>
             <p>Foto van het product verandert per knop...</p>
-            <button class="btn p-3" onclick="changeImage('images/shake.webp')">Schudden</button>
-            <button class="btn p-3" onclick="changeImage('images/hover.jpg')">Hover</button>
-            <button class="btn p-3" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
+            <button class="btn p-3 m-2" onclick="changeImage('images/shake.webp')">Schudden</button>
+            <button class="btn p-3 m-2" onclick="changeImage('images/hover.jpg')">Hover</button>
+            <button class="btn p-3 m-2" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
         </div>
 
         <div class="flex-2 justify-center items-center flex-col columnReverse">
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5 noSideMargin">
-                <img class="max-h-[50vh]" src="image/work-in-progress.jpg" alt="a work in progress image">
+                <img id="productImage" class="max-h-[50vh] transition-opacity duration-300 opacity-100" src="images/work-in-progress.jpg" alt="a work in progress image">
             </div>
-            <div class="border-4 border-[#05668D] mx-5 noSideMargin rounded-xl p-5">
+            <div id="hoe-werkt-het" class="border-4 border-[#05668D] mx-5 noSideMargin rounded-xl p-5">
             hello
             </div>
 
