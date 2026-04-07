@@ -5,15 +5,15 @@ include_once "partials/header.php";
 <body class="text-white">
 <div class="flex flex-col gap-[48px]">
 
-    <nav class="bg-[#05668D] items-center h-10 flex px-5 rounded-b-[80px]">
+    <nav class="bg-[#05668D] items-center h-12 flex px-5 rounded-b-[80px]">
         <div class="flex-3">
             <img src="" alt="logo"/>
         </div>
 
         <div class="flex-2 flex px-5 gap-4">
-            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
-            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
-            <a class="text-xs btn p-1" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
+            <a class="text-xs btn p-3" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
+            <a class="text-xs btn p-3" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
+            <a class="text-xs btn p-3" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
         </div>
     </nav>
     <div class="mx-12 smallSideMargin">
@@ -49,9 +49,9 @@ include_once "partials/header.php";
         <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 noSideMargin rounded-[40px] p-3 gap-2">
             <div class="">Type sensor</div>
             <p>Foto van het product verandert per knop...</p>
-            <button class="btn p-3 m-2" onclick="changeImage('images/shake.webp')">Schudden</button>
-            <button class="btn p-3 m-2" onclick="changeImage('images/hover.jpg')">Hover</button>
-            <button class="btn p-3 m-2" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
+            <button class="btn p-5 m-2" onclick="changeImage('images/shake.webp')">Schudden</button>
+            <button class="btn p-5 m-2" onclick="changeImage('images/hover.jpg')">Hover</button>
+            <button class="btn p-5 m-2" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
         </div>
 
         <div class="flex-2 justify-center items-center flex-col columnReverse">
