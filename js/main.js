@@ -19,3 +19,18 @@ function changeImage(newImage) {
         img.classList.remove("opacity-0");
     }, 300);
 }
+
+function changeText(newText) {
+    const text = document.getElementById("sensor-uitleg");
+
+    // Fade out
+    text.classList.add("opacity-0");
+
+    setTimeout(() => {
+        // Change text
+        text.textContent = newText;
+
+        // Fade in
+        text.classList.remove("opacity-0");
+    }, 300);
+}
