@@ -49,9 +49,9 @@ include_once "partials/header.php";
         <div class="flex flex-col border-4 border-[#BDE692]  flex-1 m-5 noSideMargin rounded-[40px] p-3 gap-2">
             <div class="">Type sensor</div>
             <p>Bij de ontwikkeling van ons product hebben we meerdere typen sensoren geprobeerd en getest. Uit deze tests kwam dat de 'schud sensor' het beste gebruikt kon worden voor de Handycaller. Door op de knoppen te klikken kunt u een foto zien van hoe dat eruitziet.</p>
-            <button class="btn p-5 m-2" onclick="changeImage('images/shake.webp')">Schudden</button>
-            <button class="btn p-5 m-2" onclick="changeImage('images/hover.jpg')">Hover</button>
-            <button class="btn p-5 m-2" onclick="changeImage('images/press-button.jpg')">Druk knop</button>
+            <button class="btn p-5 m-2" onclick="changeImage('images/shake.webp'); changeText('Je activeert de Handycaller door te schudden. Deze stuurt vervolgens een signaal ')">Schudden</button>
+            <button class="btn p-5 m-2" onclick="changeImage('images/hover.jpg'); changeText('Hoveren over de sensor activeert het systeem.')">Hover</button>
+            <button class="btn p-5 m-2" onclick="changeImage('images/press-button.jpg'); changeText('Druk op de knop om een medewerker te roepen.')">Druk knop</button>
         </div>
 
         <div class="flex-2 justify-center items-center flex-col columnReverse">
@@ -59,7 +59,9 @@ include_once "partials/header.php";
                 <img id="productImage" class="max-h-[50vh] transition-opacity duration-300 opacity-100" src="images/work-in-progress.jpg" alt="a work in progress image">
             </div>
             <div id="hoe-werkt-het" class="border-4 border-[#05668D] mx-5 noSideMargin rounded-xl p-5">
-            hello
+                <p id="sensor-uitleg" class="transition-opacity duration-300 opacity-100">
+                    hello
+                </p>
             </div>
 
         </div>
