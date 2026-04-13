@@ -11,9 +11,9 @@ include_once "partials/header.php";
         </div>
 
         <div class="flex-2 flex px-5 gap-4">
-            <a class="text-sm btn p-4" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
+            <a class="text-sm btn p-4" href="#" onclick="scrollToSection('target-group-and-context')">Doelgroep en context</a>
             <a class="text-sm btn p-4" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
-            <a class="text-sm btn p-4" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
+            <a class="text-sm btn p-4" href="#" onclick="scrollToSection('how-does-it-work')">Hoe werkt het?</a>
         </div>
     </nav>
     <div class="mx-12 smallSideMargin">
@@ -24,7 +24,7 @@ include_once "partials/header.php";
         </header>
 
 <main class="my-12 text-black">
-    <section id="doelgroep-en-context" class="flex flex-row rowToColumn gap-2">
+    <section id="target-group-and-context" class="flex flex-row rowToColumn gap-2">
         <div class="flex flex-col border-4 border-[#BDE692] flex-1 m-5 noSideMargin rounded-[40px] p-5 items-center relative">
             <h2 class="bg-[#05668D] rounded-b-[80px] rounded-t-[50px] h-14 text-white w-[101%] absolute -top-1 text-center pt-3 text-2xl">Doelgroep en context</h2>
             <p class="mt-10 text-center align-middle text-lg">
@@ -40,7 +40,7 @@ include_once "partials/header.php";
 
         <div class="flex-1 justify-center items-center">
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5 noSideMargin rounded-[40px]">
-                <img class="rounded-[40px]" src="images/doelgroep.png" alt="foto van doelgroep">
+                <img class="rounded-[40px]" src="images/target-group.png" alt="foto van doelgroep">
             </div>
         </div>
     </section>
@@ -65,8 +65,8 @@ include_once "partials/header.php";
             <div class="flex flex-col border border-[#BDE692] flex-1 m-5 noSideMargin rounded-[40px]">
                 <img id="productImage" class="max-h-[50vh] transition-opacity duration-300 opacity-100 rounded-[40px]" src="images/work-in-progress.jpg" alt="a work in progress image">
             </div>
-            <div id="hoe-werkt-het" class="border-4 border-[#05668D] mx-5 noSideMargin rounded-[40px] p-5">
-                <p id="sensor-uitleg" class="transition-opacity duration-300 opacity-100 text-center">
+            <div id="how-does-it-work" class="border-4 border-[#05668D] mx-5 noSideMargin rounded-[40px] p-5">
+                <p id="sensor-explanation" class="transition-opacity duration-300 opacity-100 text-center">
                     Lees hier hoe de verschillende sensoren werken.
                 </p>
             </div>

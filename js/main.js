@@ -21,7 +21,7 @@ function changeImage(newImage) {
 }
 
 function changeText(newText) {
-    const text = document.getElementById("sensor-uitleg");
+    const text = document.getElementById("sensor-explanation");
 
     // Fade out
     text.classList.add("opacity-0");
