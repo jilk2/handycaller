@@ -57,9 +57,9 @@ include_once "partials/header.php";
                         Deze sensoren kunt u in werking zien in de afbeelding hiernaast.
                         Door op de knoppen te klikken kunt u een foto zien van hoe dat eruitziet.
                     </p>
-                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/shake.webp'); changeText('Je activeert de Handycaller door te schudden. Deze stuurt vervolgens een signaal naar een medewerker waarin staat dat je hulp nodig hebt in een bepaalde aisle')">Schudden</button>
-                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/hover.jpg'); changeText('Als je met de zender hovert over de ontvanger krijgt die met infrarood een bericht binnen.')">Hover</button>
-                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/press-button.jpg'); changeText('Met de knoppen op de CPX kunt u het aisle nummer veranderen zodat de medewerker je locatie weet. Dit nummer is ook gevisualiseerd met lampjes.')">Druk knop</button>
+                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/shake.webp'); changeText('U activeert de Handycaller door te schudden. Deze stuurt vervolgens een signaal naar een medewerker via bluetooth waarin staat dat u hulp nodig hebt in een bepaalde afdeling')">Schudden</button>
+                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/hover.jpg'); changeText('Als u met de zender hovert over de ontvanger krijgt die met infrarood een bericht binnen.')">Hover</button>
+                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/press-button.jpg'); changeText('Met de knoppen op de CPX kunt u het afdeling nummer veranderen zodat de medewerker uw locatie weet. Dit nummer is ook gevisualiseerd met lampjes.')">Druk knop</button>
                 </div>
 
                 <div class="flex-2 justify-center items-center flex-col columnReverse">
