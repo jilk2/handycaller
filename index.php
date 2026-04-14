@@ -11,9 +11,9 @@ include_once "partials/header.php";
         </div>
 
         <div class="flex-2 flex px-5 gap-4 smallScreenGap mediumScreenGap">
-            <a class="text-base font-semibold text-center btn w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium btn p-4"" href="#" onclick="scrollToSection('target-group-and-context')">Doelgroep en context</a>
-            <a class="text-base font-semibold text-center btn w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium btn p-4"" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
-            <a class="text-base font-semibold text-center btn w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium btn p-4"" href="#" onclick="scrollToSection('how-does-it-work')">Hoe werkt het?</a>
+            <a class="text-base font-semibold text-center btn w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium btn p-4" href="#" onclick="scrollToSection('target-group-and-context')">Doelgroep en context</a>
+            <a class="text-base font-semibold text-center btn w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium btn p-4" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
+            <a class="text-base font-semibold text-center btn w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium btn p-4" href="#" onclick="scrollToSection('how-does-it-work')">Hoe werkt het?</a>
         </div>
     </nav>
 
@@ -40,7 +40,7 @@ include_once "partials/header.php";
 
                 <div class="flex-1 justify-center items-center">
                     <div class="flex flex-col border border-[#BDE692] flex-1 m-5 noSideMargin rounded-[40px]">
-                        <img class="rounded-[40px]" src="images/target-group.png" alt="foto van doelgroep">
+                        <img class="rounded-[40px] min-w-75" src="images/target-group.png" alt="foto van doelgroep">
                     </div>
                 </div>
 
@@ -57,9 +57,34 @@ include_once "partials/header.php";
                         Deze sensoren kunt u in werking zien in de afbeelding hiernaast.
                         Door op de knoppen te klikken kunt u een foto zien van hoe dat eruitziet.
                     </p>
-                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/shake.webp'); changeText('U activeert de Handycaller door te schudden. Deze stuurt vervolgens een signaal naar een medewerker via bluetooth waarin staat dat u hulp nodig hebt in een bepaalde afdeling')">Schudden</button>
-                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/hover.jpg'); changeText('Als u met de zender hovert over de ontvanger krijgt die met infrarood een bericht binnen.')">Hover</button>
-                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]" onclick="changeImage('images/press-button.jpg'); changeText('Met de knoppen op de CPX kunt u het afdeling nummer veranderen zodat de medewerker uw locatie weet. Dit nummer is ook gevisualiseerd met lampjes.')">Druk knop</button>
+
+                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]"
+                            onclick="changeContent('productImage', (element) => {
+                                element.src = 'images/shake.webp';
+                            });
+                            changeContent('sensor-explanation', (element) => {
+                                element.textContent = 'U activeert de Handycaller door te schudden. Deze stuurt vervolgens een signaal naar een medewerker via bluetooth waarin staat dat u hulp nodig hebt in een bepaalde afdeling.';
+                            });">
+                        Schudden
+                    </button>
+                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]"
+                            onclick="changeContent('productImage', (element) => {
+                                element.src = 'images/hover.jpg';
+                            });
+                            changeContent('sensor-explanation', (element) => {
+                                element.textContent = 'Als u met de zender hovert over de ontvanger krijgt die met infrarood een bericht binnen.';
+                            });">
+                        Hover
+                    </button>
+                    <button class="btn p-5 m-2 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]"
+                            onclick="changeContent('productImage', (element) => {
+                                element.src = 'images/press-button.jpg';
+                            });
+                            changeContent('sensor-explanation', (element) => {
+                                element.textContent = 'Met de knoppen op de CPX kunt u het afdeling nummer veranderen zodat de medewerker uw locatie weet. Dit nummer is ook gevisualiseerd met lampjes.';
+                            });">
+                        Druk knop
+                    </button>
                 </div>
 
                 <div class="flex-2 justify-center items-center flex-col columnReverse">

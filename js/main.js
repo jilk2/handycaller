@@ -5,32 +5,17 @@ function scrollToSection(id) {
     });
 }
 
-function changeImage(newImage) {
-    const img = document.getElementById("productImage");
-
-    //Fade out
-    img.classList.add("opacity-0");
-
-    setTimeout(() => {
-        //Nieuwe afbeelding
-        img.src = newImage;
-
-        //Fade in
-        img.classList.remove("opacity-0");
-    }, 300);
-}
-
-function changeText(newText) {
-    const text = document.getElementById("sensor-explanation");
+function changeContent(elementId, callback) {
+    const element = document.getElementById(elementId);
 
     // Fade out
-    text.classList.add("opacity-0");
+    element.classList.add("opacity-0");
 
     setTimeout(() => {
-        // Change text
-        text.textContent = newText;
+        // Hier gebeurt de verandering
+        callback(element);
 
         // Fade in
-        text.classList.remove("opacity-0");
+        element.classList.remove("opacity-0");
     }, 300);
 }

@@ -269,11 +269,17 @@
   .w-\[101\%\] {
     width: 101%;
   }
+  .min-w-75 {
+    min-width: calc(var(--spacing) * 75);
+  }
   .min-w-\[30px\] {
     min-width: 30px;
   }
   .min-w-\[70px\] {
     min-width: 70px;
+  }
+  .min-w-\[300px\] {
+    min-width: 300px;
   }
   .flex-1 {
     flex: 1;
