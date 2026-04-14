@@ -5,8 +5,8 @@ include_once "partials/header.php";
 <body class="text-white bg-[#EBF2FA]">
 <div class="flex flex-col gap-[48px]">
 
-    <nav class="bg-[#05668D] shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] flex items-center gap-60 h-20 px-5 rounded-b-[80px] biggerNav smallScreenGap mediumScreenGap">
-        <div class="ml-12 border-3 rounded-4xl p-3 logoSpace">
+    <nav class="bg-[#05668D] shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] flex items-center xl:gap-60 lg:gap-30 sm:gap-5 h-20 px-5 rounded-b-[80px] biggerNav smallScreenGap mediumScreenGap">
+        <div class="ml-12 sm:ml-5 border-3 rounded-4xl p-3 logoSpace">
             <img src="" alt="logo"/>
         </div>
 
@@ -19,7 +19,7 @@ include_once "partials/header.php";
 
     <div class="mx-12 smallSideMargin">
     <header class="bg-[#05668D] rounded-[40px] h-50 flex items-center justify-center shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]">
-        <h1 class="xl:text-8xl font-bold sm:text-4xl lg:text-6xl">
+        <h1 class="xl:text-8xl font-bold sm:text-4xl lg:text-6xl text-3xl">
            De Handycaller
         </h1>
     </header>
