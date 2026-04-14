@@ -5,20 +5,20 @@ include_once "partials/header.php";
 <body class="text-white bg-[#EBF2FA]">
 <div class="flex flex-col gap-[48px]">
 
-    <nav class="bg-[#05668D] shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] flex items-center gap-60 h-20 px-5 rounded-b-[80px] biggerNav smallScreenGap">
+    <nav class="bg-[#05668D] shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] flex items-center gap-60 h-20 px-5 rounded-b-[80px] biggerNav smallScreenGap mediumScreenGap">
         <div class="ml-12 border-3 rounded-4xl p-3 logoSpace">
             <img src="" alt="logo"/>
         </div>
 
-        <div class="flex-2 flex px-5 gap-4 smallScreenGap">
-            <a class="text-base font-semibold text-center btn p-3 w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
-            <a class="text-base font-semibold text-center btn p-3 w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
-            <a class="text-base font-semibold text-center btn p-3 w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
+        <div class="flex-2 flex px-5 gap-4 smallScreenGap mediumScreenGap">
+            <a class="text-base font-semibold text-center btn p-3 w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium" href="#" onclick="scrollToSection('doelgroep-en-context')">Doelgroep en context</a>
+            <a class="text-base font-semibold text-center btn p-3 w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium" href="#" onclick="scrollToSection('type-sensor')">Type sensor</a>
+            <a class="text-base font-semibold text-center btn p-3 w-60 shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] navButtonsSmall navButtonsMedium" href="#" onclick="scrollToSection('hoe-werkt-het')">Hoe werkt het?</a>
         </div>
     </nav>
     <div class="mx-12 smallSideMargin">
     <header class="bg-[#05668D] rounded-[40px] h-50 flex items-center justify-center shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]">
-        <h1 class="text-8xl font-bold">
+        <h1 class="xl:text-8xl font-bold sm:text-4xl lg:text-6xl">
            De Handycaller
         </h1>
     </header>

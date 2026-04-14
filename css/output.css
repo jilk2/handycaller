@@ -10,21 +10,18 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
-    --text-xs: 0.75rem;
-    --text-xs--line-height: calc(1 / 0.75);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --radius-xl: 0.75rem;
     --radius-4xl: 2rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,9 +178,6 @@
   }
 }
 @layer utilities {
-  .m-0 {
-    margin: calc(var(--spacing) * 0);
-  }
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
@@ -226,9 +220,6 @@
   .w-\[98\%\] {
     width: 98%;
   }
-  .w-auto {
-    width: auto;
-  }
   .flex-1 {
     flex: 1;
   }
@@ -265,9 +256,6 @@
   .rounded-\[40px\] {
     border-radius: 40px;
   }
-  .rounded-xl {
-    border-radius: var(--radius-xl);
-  }
   .rounded-b-\[80px\] {
     border-bottom-right-radius: 80px;
     border-bottom-left-radius: 80px;
@@ -279,14 +267,6 @@
   .border-3 {
     border-style: var(--tw-border-style);
     border-width: 3px;
-  }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
-  .border-6 {
-    border-style: var(--tw-border-style);
-    border-width: 6px;
   }
   .border-8 {
     border-style: var(--tw-border-style);
@@ -307,9 +287,6 @@
   .bg-\[\#EBF2FA\] {
     background-color: #EBF2FA;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -325,18 +302,6 @@
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-3xl {
-    font-size: var(--text-3xl);
-    line-height: var(--tw-leading, var(--text-3xl--line-height));
-  }
-  .text-8xl {
-    font-size: var(--text-8xl);
-    line-height: var(--tw-leading, var(--text-8xl--line-height));
-  }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -366,28 +331,6 @@
     --tw-shadow: 4px 6px 3px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.2));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  .shadow-\[6px_5px_3px_0px_rgba\(0\,_0\,_0\,_0\.2\)\] {
-    --tw-shadow: 6px 5px 3px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.2));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-lg {
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-md {
-    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-sm {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-black {
-    --tw-shadow-color: #000;
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
-    }
-  }
   .transition-opacity {
     transition-property: opacity;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -396,6 +339,48 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .sm\:text-4xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .sm\:text-6xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .lg\:text-4xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .lg\:text-6xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .lg\:text-8xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
+  }
+  .xl\:text-8xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-8xl);
+      line-height: var(--tw-leading, var(--text-8xl--line-height));
+    }
   }
 }
 .btn {
@@ -411,7 +396,7 @@
   --tw-duration: 300ms;
   transition-duration: 300ms;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (width <= 600px) {
   button {
     padding: 2px;
   }
@@ -423,13 +408,14 @@
     margin-left: 1rem;
   }
   .smallScreenGap {
-    gap: 1rem;
+    gap: 10px;
   }
   .navButtonsSmall {
-    width: 80px;
+    max-width: 80px;
     text-align: center;
     align-content: center;
     font-size: 12px;
+    padding: 5px;
   }
   .smallSideMargin {
     margin-left: 1rem;
@@ -448,6 +434,23 @@
   }
   .columnReverse {
     flex-direction: column-reverse;
+  }
+  .headerTextSize {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .mediumScreenGap {
+    gap: 1rem;
+  }
+  .headerTextSizeMedium {
+    font-size: 70px;
+  }
+  .navButtonsMedium {
+    width: 140px;
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
   }
 }
 @property --tw-border-style {

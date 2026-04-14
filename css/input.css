@@ -7,7 +7,7 @@
     @apply bg-[#BDE692] transition duration-300;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (width <= 600px) {
 
     button {
         padding: 2px
@@ -21,14 +21,15 @@
         margin-left: 1rem;
     }
     .smallScreenGap {
-        gap: 1rem;
+        gap: 10px;
     }
 
     .navButtonsSmall {
-        width: 80px;
+        max-width: 80px;
         text-align: center;
         align-content: center;
         font-size: 12px;
+        padding: 5px;
     }
     .smallSideMargin {
         margin-left:  1rem;
@@ -48,5 +49,23 @@
     .columnReverse {
         flex-direction: column-reverse;
     }
-
+    .headerTextSize {
+        font-size: 40px;
+    }
 }
+
+@media only screen and (max-width: 1160px) {
+    .mediumScreenGap {
+        gap: 1rem;
+    }
+    .headerTextSizeMedium {
+        font-size: 70px;
+    }
+    .navButtonsMedium {
+        width: 140px;
+        text-align: center;
+        align-content: center;
+        font-size: 12px;
+    }
+}
+
