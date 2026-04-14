@@ -11,7 +11,7 @@
     @apply shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]
 }
 
-@media only screen and (width <= 600px) {
+@media only screen and (width <= 650px) {
 
     button {
         padding: 2px
@@ -23,9 +23,6 @@
     }
     .logoSpace {
         margin-left: 1rem;
-    }
-    .smallScreenGap {
-        gap: 10px;
     }
 
     .navButtonsSmall {
@@ -59,14 +56,11 @@
 }
 
 @media only screen and (max-width: 1160px) {
-    .mediumScreenGap {
-        gap: 1rem;
-    }
     .headerTextSizeMedium {
         font-size: 70px;
     }
     .navButtonsMedium {
-        width: 140px;
+        width: 130px;
         text-align: center;
         align-content: center;
         font-size: 12px;

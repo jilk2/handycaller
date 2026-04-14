@@ -2,10 +2,9 @@
 include_once "partials/header.php";
 ?>
 
-<body class="text-white bg-[#EBF2FA]">
-<div class="flex flex-col gap-12">
+<body class="text-white bg-[#EBF2FA] flex flex-col gap-12">
 
-    <nav class="bg-[#05668D] custom-shadow flex items-center h-20 px-5 rounded-b-[80px] xl:gap-60 lg:gap-30 sm:gap-5 biggerNav smallScreenGap mediumScreenGap">
+    <nav class="bg-[#05668D] custom-shadow flex items-center h-20 px-5 rounded-b-[80px] xl:gap-60 lg:gap-30 sm:gap-5 gap-5 biggerNav smallScreenGap mediumScreenGap">
         <div class="ml-12 sm:mx-5 border-3 rounded-4xl p-3 logoSpace">
             <img src="" alt="logo"/>
         </div>
@@ -58,7 +57,7 @@ include_once "partials/header.php";
                         Door op de knoppen te klikken kunt u een foto zien van hoe dat eruitziet.
                     </p>
 
-                    <button class="btn p-5 m-2 custom-shadow"
+                    <button class="btn p-6 m-2 custom-shadow"
                             onclick="changeContent('productImage', (element) => {
                                 element.src = 'images/shake.webp';
                             });
@@ -67,7 +66,7 @@ include_once "partials/header.php";
                             });">
                         Schudden
                     </button>
-                    <button class="btn p-5 m-2 custom-shadow"
+                    <button class="btn p-6 m-2 custom-shadow"
                             onclick="changeContent('productImage', (element) => {
                                 element.src = 'images/hover.jpg';
                             });
@@ -76,7 +75,7 @@ include_once "partials/header.php";
                             });">
                         Hover
                     </button>
-                    <button class="btn p-5 m-2 custom-shadow"
+                    <button class="btn p-6 m-2 custom-shadow"
                             onclick="changeContent('productImage', (element) => {
                                 element.src = 'images/press-button.jpg';
                             });
