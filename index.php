@@ -18,11 +18,6 @@ include_once "partials/header.php";
     </nav>
 
     <div class="mx-12 smallSideMargin">
-        <header class="bg-[#05668D] rounded-[40px] h-50 flex items-center justify-center shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)] p-10 mx-5">
-            <h1 class="text-8xl font-bold text-center">
-                De Handycaller
-            </h1>
-        </header>
     <header class="bg-[#05668D] rounded-[40px] h-50 flex items-center justify-center shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]">
         <h1 class="xl:text-8xl font-bold sm:text-4xl lg:text-6xl">
            De Handycaller
