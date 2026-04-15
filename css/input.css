@@ -11,10 +11,17 @@
     @apply shadow-[4px_6px_3px_0px_rgba(0,_0,_0,_0.2)]
 }
 
+@media only screen and (width <= 450px) {
+    .logoSize {
+        @apply p-1.5 border-2 px-0 h-10
+    }
+
+}
+
 @media only screen and (width <= 650px) {
 
     button {
-        padding: 2px
+        padding: 6px 2px;
     }
 
     .biggerNav {
@@ -67,3 +74,12 @@
     }
 }
 
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+    .h2TextSize {
+        @apply text-lg
+    }
+
+    .pAndButtonTextSize {
+        @apply text-base
+    }
+}
