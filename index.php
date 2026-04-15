@@ -53,7 +53,8 @@ include_once "partials/header.php";
                     <h2 class="font-semibold bg-[#05668D] custom-shadow rounded-b-[80px] rounded-t-[50px] h-16 text-white w-[101%] absolute -top-2 left-0 text-center pt-4 text-2xl h2TextSize">Type sensor</h2>
                     <p class="mt-12 text-center text-lg pAndButtonTextSize">
                         Bij de ontwikkeling van ons product hebben we meerdere typen sensoren geprobeerd en getest.
-                        Deze sensoren kunt u in werking zien in de afbeelding hiernaast.
+                        Uiteindelijk kwam hieruit dat schudden de beste manier was om de Handycaller te activeren en hebben we deze verder uitgewerkt.
+                        De sensoren kunt u in werking zien in de afbeelding hiernaast.
                         Door op de knoppen te klikken kunt u een foto zien van hoe dat eruitziet.
                     </p>
 
@@ -68,19 +69,19 @@ include_once "partials/header.php";
                     </button>
                     <button class="btn p-6 m-2 custom-shadow text-lg pAndButtonTextSize"
                             onclick="changeContent('productImage', (element) => {
-                                element.src = 'images/hover.jpg';
+                                element.src = 'images/hover.gif';
                             });
                             changeContent('sensor-explanation', (element) => {
-                                element.textContent = 'Als u met de zender hovert over de ontvanger krijgt die met infrarood een bericht binnen.';
+                                element.textContent = 'Als u hovert over de CPX geeft die licht als feedback en stuurt zou die een signaal naar een medewerker moeten sturen.';
                             });">
                         Hover
                     </button>
                     <button class="btn p-6 m-2 custom-shadow text-lg pAndButtonTextSize"
                             onclick="changeContent('productImage', (element) => {
-                                element.src = 'images/press-button.jpg';
+                                element.src = 'images/button.gif';
                             });
                             changeContent('sensor-explanation', (element) => {
-                                element.textContent = 'Met de knoppen op de CPX kunt u het afdeling nummer veranderen zodat de medewerker uw locatie weet. Dit nummer is ook gevisualiseerd met lampjes.';
+                                element.textContent = 'Als u op knop A klikt geeft de CPX licht als feedback en stuurt zou die een signaal naar een medewerker moeten sturen.';
                             });">
                         Druk knop
                     </button>
@@ -88,7 +89,7 @@ include_once "partials/header.php";
 
                 <div class="flex-2 justify-center items-center flex-col columnReverse">
                     <div class="flex flex-col border border-[#BDE692] flex-1 m-5 noSideMargin rounded-[40px]">
-                        <img id="productImage" class="max-h-[50vh] transition-opacity duration-300 opacity-100 rounded-[40px]" src="images/work-in-progress.jpg" alt="a work in progress image">
+                        <img id="productImage" class="max-h-[50vh] transition-opacity duration-300 opacity-100 rounded-[40px]" src="images/sensorenCPX.png" alt="voorbeeld van sensoren op de CPX">
                     </div>
                     <div id="how-does-it-work" class="border-8 border-[#05668D] mx-5 noSideMargin rounded-[40px] p-5 custom-shadow">
                         <p id="sensor-explanation" class="transition-opacity duration-300 opacity-100 text-lg pAndButtonTextSize">
