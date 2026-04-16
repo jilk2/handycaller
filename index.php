@@ -4,9 +4,9 @@ include_once "partials/header.php";
 
 <body class="text-white bg-[#EBF2FA] flex flex-col gap-12">
 
-    <nav class="bg-[#05668D] custom-shadow flex items-center h-20 2xl:px-5 xl:px-5 lg:px-5 md:px-5 sm:px-4 px-2.5 rounded-b-[80px] 2xl:gap-60 xl:gap-60 lg:gap-30 sm:gap-5 gap-0 biggerNav sticky top-0 z-50">
-        <div class="ml-12  border-3 rounded-4xl p-3 logoSpace logoSize">
-            <img src="" alt="logo"/>
+    <nav class="bg-[#05668D] custom-shadow flex items-center h-20 2xl:px-5 xl:px-5 lg:px-5 md:px-5 sm:px-4 px-2.5 rounded-b-[80px] overflow-hidden 2xl:gap-60 xl:gap-60 lg:gap-30 sm:gap-5 gap-0 biggerNav sticky top-0 z-50">
+        <div class="ml-12  p-3 logoSpace logoSize">
+<!--            <img style="display:hidden;" src="" alt="logo"/>-->
         </div>
 
         <div class="flex-2 flex px-5 gap-4 smallScreenGap mediumScreenGap">
@@ -60,7 +60,7 @@ include_once "partials/header.php";
 
                     <button class="btn p-6 m-2 custom-shadow text-lg pAndButtonTextSize"
                             onclick="changeContent('productImage', (element) => {
-                                element.src = 'images/shake.webp';
+                                element.src = 'images/shake.gif';
                             });
                             changeContent('sensor-explanation', (element) => {
                                 element.textContent = 'U activeert de Handycaller door te schudden. Deze stuurt vervolgens een signaal naar een medewerker via bluetooth waarin staat dat u hulp nodig hebt in een bepaalde afdeling.';
@@ -72,7 +72,7 @@ include_once "partials/header.php";
                                 element.src = 'images/hover.gif';
                             });
                             changeContent('sensor-explanation', (element) => {
-                                element.textContent = 'Als u hovert over de CPX geeft die licht als feedback en stuurt zou die een signaal naar een medewerker moeten sturen.';
+                                element.textContent = 'Als u hovert over de Handycaller geeft die licht als feedback en stuurt zou die een signaal naar een medewerker moeten sturen.';
                             });">
                         Hover
                     </button>
@@ -81,7 +81,7 @@ include_once "partials/header.php";
                                 element.src = 'images/button.gif';
                             });
                             changeContent('sensor-explanation', (element) => {
-                                element.textContent = 'Als u op knop A klikt geeft de CPX licht als feedback en stuurt zou die een signaal naar een medewerker moeten sturen.';
+                                element.textContent = 'Als u op knop A klikt geeft de Handycaller licht als feedback en stuurt zou die een signaal naar een medewerker moeten sturen.';
                             });">
                         Druk knop
                     </button>
